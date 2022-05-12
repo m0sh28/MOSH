@@ -1,0 +1,14 @@
+local troll = game:HttpGet("https://raw.githubusercontent.com/Xkiel07/idk-what-is-this/main/LvGVfqfH.txt")
+local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+local timer = 0
+lib.Message.New("DUPING STARTED")
+
+while task.wait(1.0) do
+    workspace.__THINGS.__REMOTES.MAIN:FireServer("b", troll)
+    if timer < 240 then
+        timer = timer + 1
+        print(timer)
+    else
+        print("QUIT NOW AND DEPOSIT")
+    end
+end
